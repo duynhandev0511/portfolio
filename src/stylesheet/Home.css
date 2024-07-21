@@ -91,4 +91,9 @@
         max-width: 100%; /* Đảm bảo container ảnh không vượt quá kích thước của màn hình */
         margin-top: 20px; /* Khoảng cách trên nếu cần */
     }
+    .social {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
 }
