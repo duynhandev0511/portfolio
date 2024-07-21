@@ -1,0 +1,86 @@
+.Xwork {
+    color: #fff;
+    font-size: 45px;
+    background: linear-gradient(45deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8)); /* Gradient màu chữ */
+    -webkit-background-clip: text; /* Clip gradient vào chữ */
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Sora";
+    margin-bottom: 20px;
+}
+
+#productions {
+    height: auto;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.work-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 550px;
+    height: 450px;
+    background-color: #140C1C;
+    margin:  0 auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  .work-item img {
+    width: 500px;
+    height: 400px;
+    object-fit: contain; /* Đảm bảo ảnh không bị méo mó */
+    transition: none; /* Không có hiệu ứng zoom khi hover */
+  }
+  
+  /* Đặt ảnh ở lề dưới item và không ảnh hưởng đến bố cục */
+  .work-item {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  /* Tooltip sẽ hiển thị khi hover lên item */
+  .tooltip {
+    position: absolute;
+    bottom: 10px; /* Khoảng cách từ lề dưới của phần tử chứa ảnh */
+    left: 15px; /* Khoảng cách từ lề trái của phần tử chứa ảnh */
+    width: calc(100% - 30px); /* Đảm bảo tooltip không tràn ra ngoài */
+    background: linear-gradient(135deg, rgba(127, 17, 224, 1), rgba(53, 27, 103, 1));
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    padding: 1rem;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }  
+  
+  /* Tooltip sẽ hiển thị khi hover lên work-item */
+  .work-item:hover .tooltip {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .tooltiptiltle {
+    font-family: "Sora";
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .work-item img {
+      width: 90%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của cột */
+      height: auto; /* Giữ tỷ lệ khung hình của ảnh */
+    }
+    .work-item {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  

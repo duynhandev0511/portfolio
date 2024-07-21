@@ -1,0 +1,24 @@
+.title {
+    color: #fff;
+    font-size: 45px;
+    background: linear-gradient(45deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8)); /* Gradient màu chữ */
+    -webkit-background-clip: text; /* Clip gradient vào chữ */
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Sora";
+    margin-bottom: 20px;
+}
+
+#projects {
+    height: auto;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text {
+    color: #fff;
+    font-family: "Sora";
+}
+
