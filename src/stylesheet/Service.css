@@ -25,7 +25,7 @@
 
 @media (max-width: 768px) {
     .title {
-        font-size: 32px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn */
+        font-size: 45px; /* Điều chỉnh kích thước chữ cho màn hình nhỏ hơn */
     }
 
     #projects {
